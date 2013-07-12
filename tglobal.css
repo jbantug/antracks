@@ -1,0 +1,174 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#tank{
+	width: 1030px;
+	height: 427px;
+	background-color: #1b1b1b;
+}
+#titlebar{
+	height: 35px;
+	width: 1030px;
+	background-color: #1b1b1b;
+}
+#videobar{
+	height:390px;
+	width: 1030px;
+	background-color: #1b1b1b;
+}
+#footerbar{
+	height:33px;
+	width: 640px;
+	background-color: #1b1b1b;
+}
+#videobox{
+	display: inline-block;
+	height: 390px;
+	width: 635px;
+	background-color: white;
+}
+#vidtitle{
+	display: inline-block;
+	width: 636px;
+	color: white;
+	margin-top: 0px;
+	border-right: solid 1px #2b2b2b;
+	height: 35px;
+	float:left;
+}
+#countdisplay{
+	display: inline;
+	color: white;
+	margin-left: 42px;
+	font-size: 12px;
+}
+#videotray{
+	display: inline-block;
+	width: 394px;
+	height: 363px;
+	background-color: #2b2b2b;
+	overflow-x: hidden;
+	/*float: right;*/
+	/*margin-top: -393px;*/
+	margin-bottom: 27px;
+	margin-left: -3px;
+}
+
+#videotray::-webkit-scrollbar {
+	width: 13px;
+	height: 13px;
+	background-color: #1b1b1b;
+}
+
+#videotray::-webkit-scrollbar-track-piece:vertical {
+	background-color: #2b2b2b;
+	border: 1px solid #1b1b1b;
+}
+#videotray::-webkit-scrollbar-thumb:vertical {
+	background-color: #1b1b1b;
+}
+
+#ytimage{
+	margin-left: -215px;
+}
+#trayvid{
+	float: left;
+	margin-top: -72px;
+	margin-left: 10px;
+	font-size: 12px;
+	font-family: Arial;
+	color: white;
+	width: 500px;
+	text-shadow: -1px 2px 0px rgb(2, 1, 1);
+}
+#num{
+	width: 27px;
+	display: inline-block;
+	float: left;
+	margin-top: 29px;
+	margin-left: 12px;
+	font-weight: bold;
+	text-shadow: -1px 2px 0px rgb(2, 1, 1);
+	color: #666666;
+	font-family: Arial;
+	font-size: 12px;
+}
+a{
+	text-decoration: none;
+	color:white;
+}
+a:hover{
+	color: white;
+	font-weight: bold;
+	font-family: Arial;
+}
+#plauthor{
+	font-family: Arial;
+	font-size: 12px;
+	color: #c0c0c0;
+	margin-left: 5px;
+	line-height: 44px;
+	margin-right: 4px;
+	float: left;
+}
+#pltitle{
+	font-family: Arial;
+	font-size: 18px;
+	color: white;
+}
+#pllink:hover{
+	text-decoration: underline;
+	font-weight: normal;
+}
+#plauthorlink{
+	font-family: Arial;
+	font-size: 12px;
+	color: #c0c0c0;
+}
+#plauthorlink:hover{
+	font-family: Arial;
+	text-decoration: underline;
+	font-weight: normal;
+	color: white;
+}
+#vidcount{
+	font-family: Arial;
+	display: inline-block;
+	margin-left: -245px;
+	line-height: 35px;
+}
+#optright{
+	float: right;
+	display: inline-block;
+	margin-top: 4px;
+	margin-right: 14px;
+}
+#optleft{
+	display: inline-block;
+	float: left;
+	position: absolute;
+	margin-top: 6px;
+	width: 97px;
+	margin-left: -279px;
+}
+#sample:hover{
+	background-color: #353535;
+}
+#sample{
+	width: 381px;
+	height: 82px;
+	line-height:12px;
+	cursor: pointer;
+}
+p {
+	margin-bottom: 0em;
+}
+#authorcolor{
+	color:rgb(119, 119, 119);
+}
+#vidt{
+	font-size: 13px;
+	font-weight: bold;
+}
