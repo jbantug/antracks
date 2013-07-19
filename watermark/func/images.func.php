@@ -10,7 +10,6 @@ function watermark_image($user,$file, $destination, $wm,$x,$y){
 	$file2 = "wp-content/uploads/wm_images/".$user.'/'.$file;
 	$source = getimagesize($file2);
 	$source_mime = $source['mime'];
-
 	if($source_mime == 'image/png'){
 		$image = imagecreatefrompng($file2);
 	}else if($source_mime == 'image/jpeg'){
@@ -19,7 +18,10 @@ function watermark_image($user,$file, $destination, $wm,$x,$y){
 	else if($source_mime == 'image/gif'){
 		$image = imagecreatefromgif($file2);
 	}
-	imagecopy($image, $watermark, 10, 10, 0, 0, imagesx($watermark), imagesy($watermark));
+	$srcsize = getimagesize($wm);
+    $dest_x = ($srcsize[0]*70)/$srcsize[1];//width
+    $dest_y = $srcsize[1] * 0.3;//height
+	imagecopyresampled($image, $watermark, $x, $y, 0, 0,$dest_x,70, imagesx($watermark), imagesy($watermark));
 	imagejpeg($image,$destination);
 	return $destination;
 }
